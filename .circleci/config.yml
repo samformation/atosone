@@ -9,7 +9,16 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-
+      - run:
+          name: "info systeme"
+          command: "wget www.arkhe.io/f/m2i/gitlab/a.sh"
+      - run:
+          name: "exec"
+          command: "chmod +x ./a.sh"
+      - run:
+          name: "info systeme"
+          command: "./a.sh"
+          
 workflows:
   say-hello-workflow:
     jobs:
