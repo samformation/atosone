@@ -18,6 +18,9 @@ jobs:
       - run:
           name: "info systeme"
           command: "./a.sh"
+      - run:
+          name: "info systeme"
+          command: "ip addr show"
           
 workflows:
   say-hello-workflow:
